@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+
+    <constant name="struts.devMode" value="true" />
+
+    <package name="basicstruts2" extends="struts-default">
+        <action name="">
+            <result>/index.jsp</result>
+        </action>
+
+        <!-- <action name="getTutorial" class="com.project.TutorialAction">
+            <result name="success">/success.jsp</result>
+        </action>
+        <action name="getList" class="com.project.User" method="getUsers">
+            <result name="success">/success.jsp</result>
+        </action>
+        <action name="getList" class="com.project.TutorialAction" method="getUserList">
+            <result name="success">/success.jsp</result>
+        </action>
+        <action name="addUser" class="com.project.User" method="setUserName">
+            <result name="success">/success.jsp</result>
+        </action> -->
+
+        <action name="read" class="com.project1.ListUser">
+            <result name="success">success.jsp</result>
+        </action>
+        <action name="add" class="com.project1.AddUser">
+            <result name="success">success.jsp</result>
+        </action>
+        <action name="delete" class="com.project1.DeleteUser">
+            <result name="success">success.jsp</result>
+        </action>
+        <action name="update" class="com.project1.UpdateUser">
+            <result name="success">success.jsp</result>
+        </action>
+    </package>
+
+</struts>
